@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function HeroSection() {
@@ -69,12 +68,10 @@ export default function HeroSection() {
         transition={{ delay: 0.9, duration: 1, ease: "easeOut" }}
         className="relative z-10 mt-14"
       >
-        <Image
+        <img
           src="/hero-image1.png"
           alt="Illustration showcasing ShadowKit UI components"
-          width={640}
-          height={420}
-          className="rounded-xl shadow-xl"
+          className="rounded-xl shadow-xl w-full max-w-xl h-auto mx-auto"
         />
       </motion.div>
     </section>
